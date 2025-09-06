@@ -28,8 +28,8 @@
             transform: translateY(-5px);
         }
         .mtn-card { border-color: #f7d100; border-width: 4px; border-style: solid; }
-        .at-card { border-color: #e53e3e; border-width: 4px; border-style: solid; }
-        .telecel-card { border-color: #a0aec0; border-width: 4px; border-style: solid; }
+        .at-card { border-color: #3b82f6; border-width: 4px; border-style: solid; }
+        .telecel-card { border-color: #ef4444; border-width: 4px; border-style: solid; }
 
         /* Custom styles for the mobile money logos to be in the corners */
         .network-logo {
@@ -83,7 +83,7 @@
     <!-- Modal for messages and PIN entry -->
     <div id="message-modal" class="modal-overlay hidden">
         <div class="modal">
-            <button class="close-button" onclick="closeModal()">Ã—</button>
+            <button class="close-button" onclick="closeModal()">×</button>
             <h2 id="modal-title" class="text-2xl font-bold mb-4"></h2>
             <p id="modal-message" class="text-gray-300"></p>
             <button id="complete-transaction-btn" class="hidden w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 rounded-xl transition-colors duration-200 shadow-md mt-4">Complete Transaction</button>
@@ -125,30 +125,30 @@
             <!-- AT Card -->
             <div class="network-card relative at-card p-6">
                 <span class="network-logo at-logo"></span>
-                <h2 class="text-2xl font-bold text-[#e53e3e] mb-4">AT</h2>
+                <h2 class="text-2xl font-bold text-[#3b82f6] mb-4">AT</h2>
                 <ul class="text-lg space-y-2">
-                    <li class="p-2 rounded-md hover:bg-red-800 transition-colors duration-200" data-plan="at-1gb">1GB - GHC 6.00</li>
-                    <li class="p-2 rounded-md hover:bg-red-800 transition-colors duration-200" data-plan="at-2gb">2GB - GHC 10.00</li>
-                    <li class="p-2 rounded-md hover:bg-red-800 transition-colors duration-200" data-plan="at-3gb">3GB - GHC 14.00</li>
-                    <li class="p-2 rounded-md hover:bg-red-800 transition-colors duration-200" data-plan="at-4gb">4GB - GHC 18.00</li>
-                    <li class="p-2 rounded-md hover:bg-red-800 transition-colors duration-200" data-plan="at-5gb">5GB - GHC 22.00</li>
-                    <li class="p-2 rounded-md hover:bg-red-800 transition-colors duration-200" data-plan="at-6gb">6GB - GHC 26.00</li>
-                    <li class="p-2 rounded-md hover:bg-red-800 transition-colors duration-200" data-plan="at-8gb">8GB - GHC 34.00</li>
-                    <li class="p-2 rounded-md hover:bg-red-800 transition-colors duration-200" data-plan="at-10gb">10GB - GHC 42.00</li>
-                    <li class="p-2 rounded-md hover:bg-red-800 transition-colors duration-200" data-plan="at-12gb">12GB - GHC 49.00</li>
+                    <li class="p-2 rounded-md hover:bg-blue-800 transition-colors duration-200" data-plan="at-1gb">1GB - GHC 6.00</li>
+                    <li class="p-2 rounded-md hover:bg-blue-800 transition-colors duration-200" data-plan="at-2gb">2GB - GHC 10.00</li>
+                    <li class="p-2 rounded-md hover:bg-blue-800 transition-colors duration-200" data-plan="at-3gb">3GB - GHC 14.00</li>
+                    <li class="p-2 rounded-md hover:bg-blue-800 transition-colors duration-200" data-plan="at-4gb">4GB - GHC 18.00</li>
+                    <li class="p-2 rounded-md hover:bg-blue-800 transition-colors duration-200" data-plan="at-5gb">5GB - GHC 22.00</li>
+                    <li class="p-2 rounded-md hover:bg-blue-800 transition-colors duration-200" data-plan="at-6gb">6GB - GHC 26.00</li>
+                    <li class="p-2 rounded-md hover:bg-blue-800 transition-colors duration-200" data-plan="at-8gb">8GB - GHC 34.00</li>
+                    <li class="p-2 rounded-md hover:bg-blue-800 transition-colors duration-200" data-plan="at-10gb">10GB - GHC 42.00</li>
+                    <li class="p-2 rounded-md hover:bg-blue-800 transition-colors duration-200" data-plan="at-12gb">12GB - GHC 49.00</li>
                 </ul>
             </div>
 
             <!-- Telecel Card -->
             <div class="network-card relative telecel-card p-6">
                 <span class="network-logo telecel-logo"></span>
-                <h2 class="text-2xl font-bold text-[#a0aec0] mb-4">Telecel</h2>
+                <h2 class="text-2xl font-bold text-[#ef4444] mb-4">Telecel</h2>
                 <ul class="text-lg space-y-2">
-                    <li class="p-2 rounded-md hover:bg-gray-700 transition-colors duration-200" data-plan="telecel-5gb">5GB - GHC 26.00</li>
-                    <li class="p-2 rounded-md hover:bg-gray-700 transition-colors duration-200" data-plan="telecel-10gb">10GB - GHC 46.00</li>
-                    <li class="p-2 rounded-md hover:bg-gray-700 transition-colors duration-200" data-plan="telecel-20gb">20GB - GHC 81.00</li>
-                    <li class="p-2 rounded-md hover:bg-gray-700 transition-colors duration-200" data-plan="telecel-30gb">30GB - GHC 116.00</li>
-                    <li class="p-2 rounded-md hover:bg-gray-700 transition-colors duration-200" data-plan="telecel-40gb">40GB - GHC 156.00</li>
+                    <li class="p-2 rounded-md hover:bg-red-700 transition-colors duration-200" data-plan="telecel-5gb">5GB - GHC 26.00</li>
+                    <li class="p-2 rounded-md hover:bg-red-700 transition-colors duration-200" data-plan="telecel-10gb">10GB - GHC 46.00</li>
+                    <li class="p-2 rounded-md hover:bg-red-700 transition-colors duration-200" data-plan="telecel-20gb">20GB - GHC 81.00</li>
+                    <li class="p-2 rounded-md hover:bg-red-700 transition-colors duration-200" data-plan="telecel-30gb">30GB - GHC 116.00</li>
+                    <li class="p-2 rounded-md hover:bg-red-700 transition-colors duration-200" data-plan="telecel-40gb">40GB - GHC 156.00</li>
                 </ul>
             </div>
 
@@ -188,9 +188,9 @@
             <div class="text-center md:text-left mb-4 md:mb-0">
                 <h3 class="text-xl font-bold text-white mb-2">Important Notice</h3>
                 <ul class="text-sm text-gray-400 space-y-1">
-                    <li>â€¢ Data bundle delivery is not instant. Some numbers may receive data faster while others take some time.</li>
-                    <li>â€¢ No refunds will be issued for wrong transactions or incorrect phone numbers.</li>
-                    <li>â€¢ Please verify your phone number carefully before making a purchase.</li>
+                    <li>• Data bundle delivery is not instant. Some numbers may receive data faster while others take some time.</li>
+                    <li>• No refunds will be issued for wrong transactions or incorrect phone numbers.</li>
+                    <li>• Please verify your phone number carefully before making a purchase.</li>
                 </ul>
             </div>
             <div class="text-center md:text-right">
@@ -249,8 +249,8 @@
             item.addEventListener('click', () => {
                 // Remove active state from all items
                 document.querySelectorAll('.network-card li').forEach(el => {
-                    el.classList.remove('bg-yellow-700', 'bg-red-700', 'bg-gray-600', 'ring-2', 'ring-offset-2', 'ring-offset-gray-700');
-                    el.classList.add('hover:bg-yellow-800', 'hover:bg-red-800', 'hover:bg-gray-700');
+                    el.classList.remove('bg-yellow-700', 'bg-red-700', 'bg-gray-600', 'ring-2', 'ring-offset-2', 'ring-offset-gray-700', 'bg-blue-700');
+                    el.classList.add('hover:bg-yellow-800', 'hover:bg-red-800', 'hover:bg-gray-700', 'hover:bg-blue-800');
                 });
                 
                 // Add active state to the clicked item
@@ -261,13 +261,13 @@
                     item.classList.add('ring-yellow-500');
                     item.classList.remove('hover:bg-yellow-800');
                 } else if (network === 'at') {
-                    item.classList.add('bg-red-700');
-                    item.classList.add('ring-red-500');
-                    item.classList.remove('hover:bg-red-800');
+                    item.classList.add('bg-blue-700');
+                    item.classList.add('ring-blue-500');
+                    item.classList.remove('hover:bg-blue-800');
                 } else if (network === 'telecel') {
-                    item.classList.add('bg-gray-600');
-                    item.classList.add('ring-gray-400');
-                    item.classList.remove('hover:bg-gray-700');
+                    item.classList.add('bg-red-700');
+                    item.classList.add('ring-red-400');
+                    item.classList.remove('hover:bg-red-700');
                 }
                 item.classList.add('ring-2', 'ring-offset-2', 'ring-offset-gray-700');
 
@@ -301,9 +301,9 @@
                 const finalMessage = `Payment successful! Your request for ${planDetails.name} has been submitted for phone number ${recipientPhoneNumber}.
                 
                 Important Notice:
-                â€¢ Data bundle delivery is not instant.
-                â€¢ No refunds will be issued for wrong transactions or incorrect phone numbers.
-                â€¢ Please verify your phone number carefully before making a purchase.`;
+                • Data bundle delivery is not instant.
+                • No refunds will be issued for wrong transactions or incorrect phone numbers.
+                • Please verify your phone number carefully before making a purchase.`;
                 showModal('Transaction Complete', finalMessage);
             }, 3000); // 3-second delay
         });
